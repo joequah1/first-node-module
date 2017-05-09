@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/mnt/d/projects/Node/first-node-module',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /root/.npm/first-node-module/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+10 info lifecycle first-node-module@1.0.0~prepublish: first-node-module@1.0.0
+11 silly lifecycle first-node-module@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/root/.npm/first-node-module/1.0.0/package.tgz',
+12 verbose tar pack   '/mnt/d/projects/Node/first-node-module' ]
+13 verbose tarball /root/.npm/first-node-module/1.0.0/package.tgz
+14 verbose folder /mnt/d/projects/Node/first-node-module
+15 verbose addLocalTarball adding from inside cache /root/.npm/first-node-module/1.0.0/package.tgz
+16 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd first-node-module@1.0.0
+18 verbose afterAdd /root/.npm/first-node-module/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /root/.npm/first-node-module/1.0.0/package/package.json written
+21 silly publish { name: 'first-node-module',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'first node module ',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'mocha --reporter spec' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/joequah1/first-node-module.git' },
+21 silly publish   author:
+21 silly publish    { name: 'NJ',
+21 silly publish      email: 'joequah1@gmail.com',
+21 silly publish      url: 'http://nijiangel.com' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/joequah1/first-node-module/issues' },
+21 silly publish   homepage: 'https://github.com/joequah1/first-node-module#readme',
+21 silly publish   devDependencies: { chai: '^3.5.0', mocha: '^3.3.0' },
+21 silly publish   readme: '# first-node-module',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '8c011afc2c10846fa667214bdd4bed2e8286128f',
+21 silly publish   _id: 'first-node-module@1.0.0',
+21 silly publish   _shasum: 'b9f0655654dd0ea394d3622f3d2e4dd3c0404869',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name first-node-module
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'first-node-module',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'first-node-module',
+26 silly mapToRegistry   name: 'first-node-module',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/first-node-module
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /root/.npm/first-node-module/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/first-node-module
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 12:25:23 AM
+33 verbose request using bearer token for auth
+34 verbose request id 44ec4265e473c2ad
+35 http request PUT https://registry.npmjs.org/first-node-module
+36 http 403 https://registry.npmjs.org/first-node-module
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '111',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Tue, 09 May 2017 16:25:26 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sin18022-SIN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1494347126.048892,VS0,VE856',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /root/.npm/registry.npmjs.org/first-node-module on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "first-node-module". Are you logged in as the correct user? : first-node-module
+40 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid first-node-module
+43 verbose cwd /mnt/d/projects/Node/first-node-module
+44 error Linux 4.4.0-43-Microsoft
+45 error argv "/usr/bin/nodejs" "/usr/bin/npm" "publish"
+46 error node v6.10.3
+47 error npm  v3.10.10
+48 error code E403
+49 error you do not have permission to publish "first-node-module". Are you logged in as the correct user? : first-node-module
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

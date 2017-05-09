@@ -1,0 +1,23 @@
+{
+  "name": "first-node-module",
+  "version": "1.0.0",
+  "description": "first node module ",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joequah1/first-node-module.git"
+  },
+  "author": "NJ <joequah1@gmail.com> (http://nijiangel.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joequah1/first-node-module/issues"
+  },
+  "homepage": "https://github.com/joequah1/first-node-module#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  }
+}
